@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcomZest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fas fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fas fa-times" id="close-btn" onclick="closemenu()" ></i>
+            <a href="index.html"><img class="logo-img" src="Images/logo.png" ></a>
+            <input type="text" class="form-control">
+            <span class="input-group-text"><i class="fas fa-search"></i></span>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart cart-icon"></i>cart</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log in</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- -----------------single product----------- -->
+
+
+    <section class="single_product">
+        <div class="slider">
+            <div id="slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Images/blue-tshirt1.jpg" class="d-block w-100" >
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/blue_tshirt2.jpg" class="d-block w-100" >
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/blue_tshirt3.jpg" class="d-block w-100" >
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <p class="new-arrival text-center">NEW</p>
+            <h2>Men's T Shirts V Neck-Blue color</h2>
+            <p>Product Code: TS0876</p>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <hr>
+            <div class="product">
+                <div class="original-price" id="originalPrice">M.R.P.: <s>₹799</s></div>
+                <div class="price" id="discountedPrice">₹499</div>
+                <div class="discount" id="discountPercent">38% off</div>
+            </div>
+            <p><b>Availability:</b> In stock</p>
+            <p><b>Condition:</b> In stock</p>
+            <p><b>Brand:</b> Van heusen</p>
+            <label>Quantity: </label>
+            <input type="text" value="1">
+            <button class="btn btn-primary">Add to Cart</button>
+            <hr>
+            <div class="product-description">
+                <p>Care Instructions: Machine Wash</p>
+                <p>Fit Type: Regular Fit: Half-Sleeve t shirt</p>
+                <p>Material: 100% Cotton</p>
+                <p>V Neck T-Shirt for Men</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="product-details">
+        <div class="container">
+            <h4>Product details</h4>
+            <ul class="product-detail">
+                <li><b>Package Dimension: </b>23.2 x 11.4 x 4cm; 150 Grams</li>
+                <li><b>Country of Origin: </b>India</li>
+                <li><b>Manufacturer: </b>Van Heusen</li>
+                <li><b>ASIN: </b>B07X363RB</li>
+                <li><b>Department: </b>Men</li>
+                <li><b>Generic Name: </b>T-Shirt</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ------------------Similar Products----------------- -->
+
+    <section class="similar-products">
+        <div class="container">
+            <div class="title">
+                <h2>Products related to this item</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="Images/black-tshirt1.jpg" alt="">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <h5>Allen Solly Men's Regular Fit Polo T-Shirt</h5>
+                        <br> <p>Allen Solly Mens</p> <br>
+                        <h6>₹654</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="Images/white-tshirt1.jpg" alt="">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h5>Van Heusen Athleisure Men T-Shirt</h5>
+                        <br> <p>Cotton Rich - Smart Tech, Easy Stain Release, Ultra Soft,</p> <br>
+                        <h6>₹599</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="Images/grey-tshirt1.jpg" class="product-3">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <h5>Van Heusen Performance Men T-Shirt</h5>
+                        <br> <p>100% Polyester - Swift Dry, Anti Microbial, V-Neck</p> <br>
+                        <h6>₹839</h6>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="Images/red-tshirt1.jpg" alt="">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <h5>Allen Solly Men's Regular Fit T-Shirt</h5>
+                        <br> <p>Allen Solly Mens</p> <br>
+                        <h6>₹541</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="product-description">
+
+    </section>
+
+
+
+    <!-------------------foooter---------------------->
+
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3 col-1">
+                    <h4>Useful links</h4>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p>Return Policy</p>
+                    <p>Discount Coupons</p>
+                </div>
+
+                <div class="col-md-3 col-2">
+                    <h4>Company</h4>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Career</p>
+                    <p>Affiliate</p>
+                </div>
+
+                <div class="col-md-3 col-3">
+                    <h4>Follow Us On</h4>
+                    <p><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></p>
+                    <p><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></p>
+                    <p><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></p>
+                    <p><a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a></p>
+                </div>
+
+                <div class="col-md-3 col-3 footer-col-4">
+                    <h4>Download out</h4>
+                    <a href="https://play.google.com/">
+                        <img src="Images/footer-img1.png" class="footer-img footer-img1" srcset="">
+                    </a>
+                    <a href="https://www.apple.com/in/app-store/" >
+                        <img src="Images/footer-img2.png" class="footer-img" srcset="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <small>Copyright &copy; EcomZest</small>
+        </div>
+
+    </footer>
+
+    <!-- Upside Arrow Button -->
+  <button class="upside-arrow-btn" onclick="scrollToTop()">
+    &#8593; <!-- Unicode character for the arrow symbol -->
+  </button>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

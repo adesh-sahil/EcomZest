@@ -1,0 +1,144 @@
+.single_product {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    /* align-items: center; */
+    gap: 1.5rem;
+}
+
+.slider {
+    display: flex;
+    justify-content: flex-end ;
+    margin-left: 10rem;
+    width: fit-content;
+}
+.w-100{
+    display: flex;
+    justify-content: flex-end;
+    height: fit-content;
+    width: 400px !important;
+    object-fit: contain;
+    box-shadow: 1px 1px 4px 1px rgba(53, 47, 47, 0.5);
+}
+
+/* Change the background color of carousel controls to black */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: black;
+}
+
+.new-arrival {
+    background: green;
+    width: 50px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.col-md-7 h2 {
+    color: #555;
+}
+
+.col-md-7 .fa, .fas{
+    color: orange;
+}
+
+
+.product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .original-price {
+    font-size: 14px;
+    font-weight: 200;
+  }
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .discount {
+    font-size: 16px;
+    color: green;
+  }
+
+  .single_product input {
+    border: 1px solid #ccc;
+    font-weight: bold;
+    height: 33px;
+    width: 30px;
+    text-align: center;
+  }
+
+  .single_product .btn-primary {
+    background: orange ;
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+    border: none;
+    box-shadow: none;
+  }
+
+  .single_product .btn-primary:hover {
+    background: rgba(174, 113, 0, 0.959);
+    
+  }
+
+  .product-description {
+    margin-top: 1.5rem;
+  }
+
+  .product-description p {
+    line-height: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .container ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+    line-height: 1.8rem;
+  }
+
+  .product-bottom h5{
+    padding-top: 2rem;
+  }
+
+  .product-bottom h4 {
+    padding-top: -2rem;
+  }
+
+  .product-bottom p {
+    margin-bottom: -1rem;
+  }
+
+  .title  {
+    margin: 2rem auto 2rem auto;
+  }
+
+  @media screen and (max-width:1024px) {
+    .slider {
+        display: grid !important;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .single_product {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .col-md-7 {
+        /* display: grid; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .new-arrival {
+        display: inline-block !important;
+    }
+  }
+
